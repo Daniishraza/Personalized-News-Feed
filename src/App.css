@@ -1,0 +1,148 @@
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaeaea; /* Light gray for a softer look */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+/* App container */
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2c3e50; /* Darker blue for footer */
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Footer color transition */
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #1abc9c; /* Light teal for footer links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #16a085; /* Darker teal on hover */
+}
+
+/* App title */
+.app-title {
+  font-size: 2.5rem;
+  color: #2980b9; /* Bright blue for title */
+  margin-bottom: 30px;
+}
+
+/* Category Selector Styling */
+.category-selector {
+  margin-bottom: 20px;
+}
+
+.category-selector label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #34495e; /* Darker gray for label */
+}
+
+.category-selector select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #3498db; /* Blue border */
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.category-selector select:focus {
+  outline: none;
+  border-color: #1abc9c; /* Light teal focus border */
+}
+
+/* News container with a responsive grid layout */
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+/* Individual news article styling */
+.news-article {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+}
+
+.news-article:hover {
+  transform: translateY(-5px) scale(1.02); /* Slightly scale up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* News article image */
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* News article content */
+.news-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* News title styling */
+.news-article h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Smooth title color transition */
+}
+
+.news-article:hover h3 {
+  color: #2980b9; /* Change color on hover */
+}
+
+/* News description */
+.news-article p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Read more link */
+.news-article a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.news-article a:hover {
+  text-decoration: underline;
+  color: #1abc9c; /* Light teal on hover */
+}
